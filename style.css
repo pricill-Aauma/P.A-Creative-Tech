@@ -39,9 +39,19 @@ nav {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--white);
     font-size: 22px;
     font-weight: bold;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
 }
 
 nav ul {
@@ -263,8 +273,31 @@ nav ul li a {
 /* ===== SERVICES SECTION ===== */
 
 .services {
+    position: relative;
     padding: 100px 60px;
     background-color: var(--white);
+    overflow: hidden;
+}
+
+.services::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: url("image/PA-Logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.04;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.services > * {
+    position: relative;
+    z-index: 1;
 }
 
 .section-heading {
@@ -392,10 +425,32 @@ nav ul li a {
 /* ===== CONTACT SECTION ===== */
 
 .contact {
+    position: relative;
     padding: 100px 60px;
     background-color: var(--white);
+    overflow: hidden;
 }
 
+.contact::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: url("image/PA-Logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.04;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.contact > * {
+    position: relative;
+    z-index: 1;
+}
 .contact-container {
     max-width: 1000px;
     margin: 0 auto;
