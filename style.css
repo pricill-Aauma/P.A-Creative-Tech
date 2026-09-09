@@ -623,5 +623,77 @@ nav ul li a {
         text-align: center;
     }
 
+    /* ===== MOBILE ABOUT ===== */
+
+    .about {
+        padding: 70px 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 280px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about h2 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .about-text p:not(.section-intro) {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .about-button {
+        margin-top: 10px;
+    }
+    
+    /* ===== MOBILE SERVICES ===== */
+
+    .services {
+        padding: 70px 20px;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .section-heading > p:last-child {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-box {
+        padding: 28px 25px;
+    }
+
+    .service-box h3 {
+        font-size: 22px;
+    }
 }
 
