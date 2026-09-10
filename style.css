@@ -769,5 +769,98 @@ nav ul li a {
     .service-box h3 {
         font-size: 22px;
     }
+     /* ===== MOBILE PORTFOLIO ===== */
+
+    .portfolio {
+        padding: 70px 20px;
+    }
+
+    .portfolio-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .portfolio-card {
+        width: 100%;
+    }
+
+    .portfolio-image {
+        height: 200px;
+    }
+
+    .portfolio-info {
+        padding: 22px;
+    }
+
+    .portfolio-info h3 {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .portfolio-info > p:last-child {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+
+    /* ===== MOBILE CONTACT ===== */
+
+    .contact {
+        padding: 70px 20px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-info h3 {
+        font-size: 26px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+
+
+    /* ===== MOBILE FOOTER ===== */
+
+    .footer {
+        padding: 50px 20px 25px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-links,
+    .footer-social {
+        align-items: center;
+    }
+
+    .footer-bottom {
+        margin-top: 40px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
 }
 
