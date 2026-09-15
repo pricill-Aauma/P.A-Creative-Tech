@@ -383,12 +383,13 @@ nav ul li a {
 }
 
 .portfolio-image {
-    height: 220px;
+    height: 300px;
     background-color: #E5E9F2;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden
 }
 
 .portfolio-image p {
@@ -396,6 +397,13 @@ nav ul li a {
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .portfolio-info {
