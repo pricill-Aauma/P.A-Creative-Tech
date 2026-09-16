@@ -201,6 +201,42 @@ nav ul li a {
     color: #555555;
     line-height: 1.6;
 }
+
+/* ===== CV BUTTONS ===== */
+
+.cv-buttons {
+display: flex;
+gap: 15px;
+margin-top: 25px;
+flex-wrap: wrap;
+}
+
+.cv-button {
+display: inline-block;
+padding: 12px 22px;
+background-color: var(--deep-blue);
+color: var(--white);
+text-decoration: none;
+font-size: 14px;
+font-weight: 600;
+letter-spacing: 0.5px;
+border: 2px solid var(--deep-blue);
+transition: 0.3s ease;
+}
+
+.cv-button {
+background-color: var(--purple);
+border-color: var(--purple);
+}
+
+.cv-download {
+background-color: transparent;
+color: var(--deep-blue);
+}
+
+.cv-download {
+color: var(--white);
+}
 /* ===== ABOUT SECTION ===== */
 
 .about {
