@@ -206,13 +206,15 @@ nav ul li a {
 
 .cv-buttons {
 display: flex;
-gap: 15px;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
 margin-top: 25px;
-flex-wrap: wrap;
 }
 
 .cv-button {
 display: inline-block;
+width: fit-content;
 padding: 12px 22px;
 background-color: var(--deep-blue);
 color: var(--white);
@@ -235,6 +237,8 @@ color: var(--deep-blue);
 }
 
 .cv-download {
+background-color: var(--purple);
+border-color: var(--purple);
 color: var(--white);
 }
 /* ===== ABOUT SECTION ===== */
