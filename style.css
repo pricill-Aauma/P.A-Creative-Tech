@@ -27,12 +27,21 @@ body {
 }
 /* ===== NAVIGATION ===== */
 
+/* ===== STICKY NAVIGATION ===== */
+
 header {
     background-color: var(--deep-blue);
     padding: 20px 60px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
+}
+/* Prevent the fixed header from covering the top of the page */
+
+main {
+    padding-top: 85px;
 }
 nav {
     display: flex;
