@@ -65,6 +65,7 @@ nav ul li a {
     font-size: 14px;
     font-weight: bold;
 }
+
 /* ===== HERO SECTION ===== */
 
 .hero {
@@ -74,15 +75,48 @@ nav ul li a {
     justify-content: center;
     text-align: center;
     padding: 60px 20px;
-    background-color: var(--white);
+    position: relative;
+    overflow: hidden;
+    background-color: var(--deep-blue);
 }
+
+/* ===== HERO BACKGROUND SLIDESHOW ===== */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+
+    animation: heroSlideshow 30s infinite;
+
+    background-image: url("banner-launch.jpg");
+}
+
+/* Dark overlay for readability */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(11, 31, 58, 0.62);
+    z-index: 1;
+}
+
+/* ===== HERO CONTENT ===== */
 
 .hero-content {
     max-width: 800px;
+    position: relative;
+    z-index: 2;
 }
 
+/* ===== HERO TEXT ===== */
+
 .hero-intro {
-    color: var(--purple);
+    color: var(--white);
     font-size: 15px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -90,18 +124,20 @@ nav ul li a {
 }
 
 .hero h1 {
-    color: var(--deep-blue);
+    color: var(--white);
     font-size: 60px;
     line-height: 1.1;
     margin-bottom: 20px;
 }
 
 .hero-text {
-    color: #555555;
+    color: var(--white);
     font-size: 19px;
     line-height: 1.6;
     margin-bottom: 35px;
 }
+
+/* ===== HERO BUTTONS ===== */
 
 .hero-buttons {
     display: flex;
@@ -125,6 +161,36 @@ nav ul li a {
 .hero-buttons a:last-child {
     background-color: var(--white);
     color: var(--purple);
+}
+
+
+/* ===== HERO SLIDESHOW ANIMATION ===== */
+
+@keyframes heroSlideshow {
+
+    0%, 16.66% {
+        background-image: url("banner-launch.jpg");
+    }
+
+    16.67%, 33.32% {
+        background-image: url("school-diary.jpg");
+    }
+
+    33.33%, 49.98% {
+        background-image: url("stickers.jpg");
+    }
+
+    49.99%, 66.64% {
+        background-image: url("bancella.jpeg");
+    }
+
+    66.65%, 83.30% {
+        background-image: url("amiso-banner.jpeg");
+    }
+
+    83.31%, 100% {
+        background-image: url("recepits.jpeg");
+    }
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -238,6 +304,7 @@ background-color: var(--purple);
 border-color: var(--purple);
 color: var(--white);
 }
+
 /* ===== ABOUT SECTION ===== */
 
 .about {
