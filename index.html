@@ -484,6 +484,52 @@
 </section>
 
 </main>
+    <script>
+    // ===== HERO BACKGROUND SLIDESHOW =====
+
+    const hero = document.querySelector(".hero");
+
+    const heroImages = [
+        "banner-launch.jpg",
+        "school-diary.jpg",
+        "stickers.jpg",
+        "bancella.jpeg",
+        "amiso-banner.jpeg",
+        "recepits.jpeg"
+    ];
+
+    let currentImage = 0;
+
+    // Show the first image immediately
+    hero.style.setProperty(
+        "--hero-background",
+        `url("${heroImages[0]}")`
+    );
+
+    // Preload the remaining images
+    heroImages.forEach((image, index) => {
+        if (index !== 0) {
+            const img = new Image();
+            img.src = image;
+        }
+    });
+
+    // Change background every 5 seconds
+    setInterval(() => {
+
+        currentImage++;
+
+        if (currentImage >= heroImages.length) {
+            currentImage = 0;
+        }
+
+        hero.style.setProperty(
+            "--hero-background",
+            `url("${heroImages[currentImage]}")`
+        );
+
+    }, 5000);
+</script>
 
 <footer class="footer">
 
