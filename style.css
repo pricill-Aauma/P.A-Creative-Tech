@@ -97,14 +97,11 @@ nav ul li a {
     content: "";
     position: absolute;
     inset: 0;
+    background-image: var(--hero-background);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 0;
-
-    animation: heroSlideshow 30s infinite;
-
-    background-image: url("banner-launch.jpg");
 }
 
 /* Dark overlay for readability */
@@ -172,36 +169,6 @@ nav ul li a {
 .hero-buttons a:last-child {
     background-color: var(--white);
     color: var(--purple);
-}
-
-
-/* ===== HERO SLIDESHOW ANIMATION ===== */
-
-@keyframes heroSlideshow {
-
-    0%, 16.66% {
-        background-image: url("banner-launch.jpg");
-    }
-
-    16.67%, 33.32% {
-        background-image: url("school-diary.jpg");
-    }
-
-    33.33%, 49.98% {
-        background-image: url("stickers.jpg");
-    }
-
-    49.99%, 66.64% {
-        background-image: url("bancella.jpeg");
-    }
-
-    66.65%, 83.30% {
-        background-image: url("amiso-banner.jpeg");
-    }
-
-    83.31%, 100% {
-        background-image: url("recepits.jpeg");
-    }
 }
 
 /* ===== ABOUT SECTION ===== */
